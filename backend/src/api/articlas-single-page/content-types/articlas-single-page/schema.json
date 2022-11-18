@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "articlas_single_pages",
+  "info": {
+    "singularName": "articlas-single-page",
+    "pluralName": "articlas-single-pages",
+    "displayName": "Articlas Single Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
